@@ -14,7 +14,7 @@ pipeline{
 }
     stage('Build Docker Image'){
        steps{
-          bat 'docker build -t %DOCKER_IMAGE%:latest .'
+         "C:\Users\SHREYA\AppData\Local\Programs\DockerDesktop\resources\bin\docker.exe" build -t %DOCKER_IMAGE%:latest .
      }
   }
       stage('Login to DockerHub'){
