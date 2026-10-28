@@ -2,14 +2,14 @@ pipeline{
    agent any
            
       environment{
-        DOCKER_IMAGE:"shreya/ahre"
+        DOCKER_IMAGE:"shreyavinay30/shreya"
         }
          
     stages{
        stage('Clone Repository'){
             steps{
                 git branch: 'main',
-                    url: 'sghrethfj"
+                    url: 'https://github.com/shreyavinay30/pipeline.git"
 }
 }
     stage('Build Docker Image'){
