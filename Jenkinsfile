@@ -35,6 +35,7 @@ pipeline{
                      bat 'docker push %DOCKER_IMAGE%:latest'
             }
           }
+    }
             post{
                  success{
                     echo 'docker image build and pushed successfully'
@@ -42,6 +43,6 @@ pipeline{
              failure{
                  echo 'failed. check console output'
            }
-        }
+        
         }
 }
